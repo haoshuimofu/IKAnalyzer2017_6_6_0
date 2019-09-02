@@ -39,23 +39,29 @@ import java.util.Properties;
  */
 public class DefaultConfig implements Configuration{
 
-	/*
+	/**
 	 * 分词器默认字典路径 
 	 */
-	private static final String PATH_DIC_MAIN = "org/wltea/analyzer/dic/main2012.dic";
-	private static final String PATH_DIC_QUANTIFIER = "org/wltea/analyzer/dic/quantifier.dic";
-
-	/*
-	 * 分词器配置文件路径
-	 */	
-	private static final String FILE_NAME = "IKAnalyzer.cfg.xml";
-	//配置属性——扩展字典
+	private static final String PATH_DIC_MAIN = "main2012.dic";
+	/**
+	 * 量词词典
+	 */
+	private static final String PATH_DIC_QUANTIFIER = "quantifier.dic";
+	/**
+	 * 配置属性——扩展字典
+	 */
 	private static final String EXT_DICT = "ext_dict";
-	//配置属性——扩展停止词典
+	/**
+	 * 配置属性——扩展停止词典
+	 */
 	private static final String EXT_STOP = "ext_stopwords";
-	
+	/**
+	 * 分词器配置文件路径
+	 */
+	private static final String FILE_NAME = "IKAnalyzer.cfg.xml";
+
 	private Properties props;
-	/*
+	/**
 	 * 是否使用smart方式分词
 	 */
 	private boolean useSmart;
@@ -68,7 +74,7 @@ public class DefaultConfig implements Configuration{
 		return new DefaultConfig();
 	}
 	
-	/*
+	/**
 	 * 初始化配置文件
 	 */
 	private DefaultConfig(){		
